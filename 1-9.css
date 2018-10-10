@@ -24,8 +24,8 @@ div.box{
 	float:left;
 	margin-top:50px;
 	margin-bottom:50px;
-	border:solid 0.1px #002;
 	margin-right:10px ;
+	position:relative;
 }
 .img{
 	width:90%;
@@ -43,16 +43,27 @@ div.box{
 	background-image: url(img/flow03.png);
 }
 p,h2{
-	text-align: center;
+	text-align: left;
 	width:90%;
+	margin:0 auto;
+}
+p{
+	font-size: 12px;
+}
+h2{
+	font-size: 14px
 }
 .obj{
 	color:white;
 	font-size:11px;
-	width: 40px;
+	width: 35px;
 	height: 20px;
-	background-color: orange;
+	background-color: #f58704;
 	text-align:center; 
+	position: absolute;
+	top:0px;
+	left: 10px;
+	line-height: 20px;
 }
 @media screen and (max-width:768px){
 	.container{
@@ -72,7 +83,10 @@ p,h2{
 		height:200px;
 		background-size:cover;
 		background-position: center;
-
+	}
+	.obj{
+		top:0px;
+		left: 19px;
 	}
 
 }
